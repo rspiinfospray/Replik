@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/noir" >
+
+    <ImageView
+        android:id="@+id/imageLogoBig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="108dp"
+        android:src="@drawable/p479256x2561" android:contentDescription="TODO"/>
+
+    <EditText
+        android:id="@+id/editPseudo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="34dp"
+        android:layout_marginLeft="10dp"
+        android:ems="10"
+        android:height="64dp"
+        android:hint="@string/choisissez" >
+
+        <requestFocus />
+    </EditText>
+
+    <ImageButton
+        android:id="@+id/imageGo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/editPseudo"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/imageLogoBig"
+        android:minHeight="64dp"
+        android:src="@drawable/p47964x641" />
+
+    <TextView
+        android:id="@+id/textReplikTheKizz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/imageLogoBig"
+        android:layout_below="@+id/imageLogoBig"
+        android:layout_marginTop="42dp"
+        android:text="@string/thequizz"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/blanc" />
+
+    <ProgressBar
+        android:id="@+id/progressBarLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textReplikTheKizz"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/blanc"
+        android:visibility="gone" />
+
+</RelativeLayout>

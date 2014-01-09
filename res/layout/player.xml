@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/top" >
+
+    <ImageView
+        android:id="@+id/imagePlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/user" />
+
+    <TextView
+        android:id="@+id/classementVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:text="@string/tiret"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/blanc" />
+
+    <TextView
+        android:id="@+id/pseudoVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:text="@string/tiret"
+        android:textColor="@color/blanc" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true" >
+
+            <TextView
+                android:id="@+id/pointsVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="@string/tiret"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/blanc" />
+
+            <TextView
+                android:id="@+id/textPts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/points"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/blanc" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

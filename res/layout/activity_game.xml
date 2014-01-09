@@ -1,0 +1,317 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/degrade_noir" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        
+         <include
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             layout="@layout/top" />
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="5dp"
+             android:layout_marginTop="5dp" >
+
+             <ImageView
+                 android:id="@+id/imageView2"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="5dp"
+                 android:layout_marginRight="2dp"
+                 android:src="@drawable/clock32" />
+
+             <TextView
+                 android:id="@+id/textrebourdgame"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center_vertical"
+                 android:text="sec"
+                 android:textAppearance="?android:attr/textAppearanceSmall" />
+
+             <ImageView
+                 android:id="@+id/imageView8"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="20dp"
+                 android:layout_marginRight="2dp"
+                 android:src="@drawable/replik32" />
+
+             <TextView
+                 android:id="@+id/textNumeroReplik"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center_vertical"
+                 android:text="@string/tiret"
+                 android:textAppearance="?android:attr/textAppearanceSmall" />
+
+             <TextView
+                 android:id="@+id/textSlash"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center_vertical"
+                 android:text="@string/slash"
+                 android:textAppearance="?android:attr/textAppearanceSmall" />
+
+             <TextView
+                 android:id="@+id/textTotalReplik"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center_vertical"
+                 android:layout_marginRight="10dp"
+                 android:text="@string/tiret"
+                 android:textAppearance="?android:attr/textAppearanceSmall" />
+
+             <ImageView
+                 android:id="@+id/imageView6"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginRight="2dp"
+                 android:src="@drawable/podium32" />
+
+             <TextView
+                 android:id="@+id/textClassementGen"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center_vertical"
+                 android:text="@string/tiret"
+                 android:textAppearance="?android:attr/textAppearanceSmall" />
+
+             <TextView
+                 android:id="@+id/textView1"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center_vertical"
+                 android:text="@string/slash"
+                 android:textAppearance="?android:attr/textAppearanceSmall" />
+
+             <TextView
+                 android:id="@+id/textTotaNbJoueurs"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center_vertical"
+                 android:layout_marginRight="2dp"
+                 android:text="@string/tiret"
+                 android:textAppearance="?android:attr/textAppearanceSmall" />
+
+             <TextView
+                 android:id="@+id/textTiretClassmntPts"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center_vertical"
+                 android:layout_marginRight="2dp"
+                 android:text="@string/tiret"
+                 android:textAppearance="?android:attr/textAppearanceSmall" />
+
+             <TextView
+                 android:id="@+id/textTTPoints"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center_vertical"
+                 android:text="@string/tiret"
+                 android:textAppearance="?android:attr/textAppearanceSmall" />
+
+             <TextView
+                 android:id="@+id/textLblPts"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center_vertical"
+                 android:text="@string/points"
+                 android:textAppearance="?android:attr/textAppearanceSmall" />
+
+         </LinearLayout>
+         
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp" >
+
+             <ImageView
+                 android:id="@+id/imagePodiumReplik"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="5dp"
+                 android:src="@drawable/podium"
+                 android:visibility="gone" />
+
+             <TextView
+                 android:id="@+id/textClassementReplik"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center_vertical"
+                 android:layout_marginRight="2dp"
+                 android:text="@string/tiret"
+                 android:textAppearance="?android:attr/textAppearanceMedium"
+                 android:visibility="gone" />
+
+             <ImageView
+                 android:id="@+id/imageMedaille"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center_vertical"
+                 android:src="@drawable/mno"
+                 android:visibility="gone" />
+
+         </LinearLayout>  
+            
+         <LinearLayout
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="5dp"
+             android:background="@drawable/papersmallombre"
+             android:orientation="vertical" >
+
+             <TextView
+                 android:id="@+id/textViewReplik"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center_vertical"
+                 android:paddingLeft="10dp"
+                 android:paddingRight="5dp"
+                 android:paddingTop="5dp"
+                 android:text="&quot;... La vie c&apos;est comme une boite de chocolat on ne sait jamais sur quoi on va tomber...&quot;"
+                 android:textSize="30px" />
+
+         </LinearLayout>
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="5dp"
+             android:layout_marginRight="5dp" >
+
+             <TextView
+                 android:id="@+id/textPtsReplik"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="140dp"
+                 android:layout_marginRight="2dp"
+                 android:shadowColor="@color/noir"
+                 android:shadowDx="1"
+                 android:shadowDy="1"
+                 android:shadowRadius="2.5"
+                 android:text="@string/tiret"
+                 android:textAppearance="?android:attr/textAppearanceMedium"
+                 android:textColor="@color/blanc"
+                 android:textSize="30dp"
+                 android:visibility="gone" />
+
+             <TextView
+                 android:id="@+id/textLblPtsReplik"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:shadowColor="@color/noir"
+                 android:shadowDx="1"
+                 android:shadowDy="1"
+                 android:shadowRadius="2.5"
+                 android:text="@string/points"
+                 android:textAppearance="?android:attr/textAppearanceSmall"
+                 android:textColor="@color/blanc"
+                 android:textSize="30dp"
+                 android:visibility="gone" />
+
+         </LinearLayout>
+         
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="5dp"
+             android:layout_marginRight="5dp"
+             android:orientation="vertical" >
+
+             <TextView
+                 android:id="@+id/textLibelleGame"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center_horizontal"
+                 android:shadowColor="@color/noir"
+                 android:shadowDx="1"
+                 android:shadowDy="1"
+                 android:shadowRadius="2.5"
+                 android:text="@string/tiret"
+                 android:textAppearance="?android:attr/textAppearanceMedium"
+                 android:textColor="@color/blanc"
+                 android:textSize="30dp"
+                 android:visibility="gone" />
+
+         </LinearLayout>
+        
+    </LinearLayout>
+    
+     <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+          android:layout_alignParentTop="false"
+          android:orientation="vertical" >
+
+             <Button
+                 android:id="@+id/buttonPropo1"
+                 style="@style/ButtonTextBlanc"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginBottom="1dp"
+                 android:layout_marginLeft="5dp"
+                 android:layout_marginRight="5dp"
+                 android:background="@drawable/boutonnoir"
+                 android:text="Button"
+                 android:textSize="12dp" />
+             
+              <Button
+                  android:id="@+id/buttonPropo2"
+                  style="@style/ButtonTextBlanc"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginBottom="1dp"
+                  android:layout_marginLeft="5dp"
+                  android:layout_marginRight="5dp"
+                  android:background="@drawable/boutonnoir"
+                  android:text="Button"
+                  android:textSize="12dp" />
+              
+               <Button
+                   android:id="@+id/buttonPropo3"
+                   style="@style/ButtonTextBlanc"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginBottom="1dp"
+                   android:layout_marginLeft="5dp"
+                   android:layout_marginRight="5dp"
+                   android:background="@drawable/boutonnoir"
+                   android:text="Button"
+                   android:textSize="12dp" />
+               
+                <Button
+                    android:id="@+id/buttonPropo4"
+                    style="@style/ButtonTextBlanc"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/boutonnoir"
+                    android:text="Button"
+                    android:textSize="12dp" />
+        
+         <include
+             android:id="@+id/includePubGame"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_alignParentBottom="true"
+             android:layout_alignParentTop="false"
+             android:layout_gravity="bottom"
+             android:layout_marginTop="5dp"
+             layout="@layout/bottom" />
+          
+         </LinearLayout>
+
+ 
+
+</RelativeLayout>

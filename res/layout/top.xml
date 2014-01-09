@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/noir"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/imagelogotop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="2dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="2dp"
+        android:src="@drawable/p47964x643" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp" >
+
+        <ImageButton
+            android:id="@+id/imageRefresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/viewrefresh"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/topnomsection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="28dp"
+            android:text="@string/empty"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/blanc" />
+
+    </RelativeLayout>
+
+</LinearLayout>
